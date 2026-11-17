@@ -19,7 +19,7 @@ export default function ClubsHeader({ onOpenMenu }: { onOpenMenu: () => void }) 
       <div className="h-full px-5 flex items-center justify-between">
         <div className="flex items-center gap-6">
           <Link href="/clubs/wellness" className="flex items-center gap-2.5 min-w-0">
-            <img src="/football-analytics-ai-transparent.webp" alt="Football Analytics AI" aria-hidden="true" className="h-6 w-auto object-contain flex-shrink-0" />
+            <img src={mockClub.clubProfile.logo_url} alt={`${mockClub.clubProfile.club_name} logo`} aria-hidden="true" className="h-5 w-auto object-contain flex-shrink-0" />
             <span className="sr-only sm:hidden">{mockClub.clubProfile.club_name}</span>
             <span className="text-sm font-semibold tracking-tight text-foreground truncate hidden sm:block">
               {mockClub.clubProfile.club_name}
